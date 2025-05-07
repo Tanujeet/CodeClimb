@@ -15,7 +15,7 @@ const Navbar = () => {
       </div>
 
       <button
-        onClick={() => router.push("/auth")}
+        onClick={() => router.push("/auth/signin")}
         className="text-white px-4 py-2 rounded border border-transparent hover:border-purple-600 transition"
       >
         Get Started
