@@ -63,7 +63,7 @@ const Auth = ({ type }: { type: "signup" | "signin" }) => {
             ) : null}
             <LabelledInput
               label="Username"
-              placeholder="me@example.com"
+              placeholder=""
               onChange={(e) => {
                 setPostInputs({
                   ...postInputs,

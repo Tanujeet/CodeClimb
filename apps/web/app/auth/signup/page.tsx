@@ -1,6 +1,10 @@
+import Auth from "../../../Components/Auth";
+
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <Auth type="signup" />
+    </div>
   );
 };
 
