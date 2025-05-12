@@ -29,7 +29,7 @@ const Auth = ({ type }: { type: "signup" | "signin" }) => {
   //   }
   // }
   return (
-    <div className="h-screen flex justify-center flex-col">
+    <div className="h-screen flex justify-center items-center ">
       <div className="flex justify-center">
         <div>
           <div className="px-10">
@@ -44,7 +44,7 @@ const Auth = ({ type }: { type: "signup" | "signin" }) => {
                 : "Already have an account?"}
               <Link
                 className="pl-2 underline"
-                href={type === "signin" ? "/signup" : "/signin"}
+                href={type === "signin" ? "/auth/signup" : "/auth/signin"}
               />
             </div>
           </div>
