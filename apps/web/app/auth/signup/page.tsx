@@ -2,7 +2,10 @@ import Auth from "../../../Components/Auth";
 
 const page = () => {
   return (
-    <div>
+    <div
+      className="bg-white
+"
+    >
       <Auth type="signup" />
     </div>
   );
