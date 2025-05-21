@@ -25,6 +25,12 @@ const page = () => {
           Improve your Coding skills
         </button>
       </div>
+      <div className="w-full lg:w-[70%] mx-auto flex flex-col gap-8 my-24 ">
+        <h2 className="!text-[1rem] lg:!text-[1.5rem] !text-gray-300 text-center font-semibold mx-auto max-w-[320px] lg:max-w-[400px]">
+          Build Your Projects and <br />
+          Land Jobs at Top companies
+        </h2>
+      </div>
     </div>
   );
 };
