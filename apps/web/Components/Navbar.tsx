@@ -23,7 +23,9 @@ const Navbar = () => {
 
       <button
         onClick={() => router.push("/auth/signin")}
-        className="relative px-6 py-3 rounded-xl text-xs bg-slate-800 w-fit h-fit  outline outline-offset-2 outline-slate-800 hover:outline-purple-500 font-semibold hover:bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 glass-effect transition-all duration-300 ease-in-out"
+        className="relative px-6 py-3 rounded-xl text-xs bg-slate-800 w-fit h-fit  outline outline-offset-2 outline-slate-800 hover:bg-gradient-to-br from-slate-500 via-cyan-600 to-teal-500
+hover:outline-cyan-600
+glass-effect transition-all duration-300 ease-in-out"
       >
         Get Started
       </button>

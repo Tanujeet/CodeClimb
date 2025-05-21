@@ -11,7 +11,7 @@ const page = () => {
       <div className="pt-45 pl-10">
         <h1 className="font-semibold text-[2.2rem] md:text-[3rem] lg:text-[4rem] max-w-[800px] mt-4 z-10">
           Your Simple Guide To <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r w-fit from-purple-500 via-pink-400 to-yellow-300">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r w-fit from-sky-400 via-cyan-500 to-teal-400">
             Code Projects
           </span>
         </h1>
@@ -20,7 +20,9 @@ const page = () => {
         </p>
         <button
           onClick={() => router.push("/auth/signin")}
-          className="relative mt-5 px-6 py-3 rounded-xl text-xs bg-slate-800 w-fit h-fit  outline outline-offset-2 outline-slate-800 hover:outline-purple-500 font-semibold hover:bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 glass-effect transition-all duration-300 ease-in-out"
+          className="relative mt-5 px-6 py-3 rounded-xl text-xs bg-slate-800 w-fit h-fit  outline outline-offset-2 outline-slate-800 hover:bg-gradient-to-br from-slate-500 via-cyan-600 to-teal-500
+hover:outline-cyan-600
+ glass-effect transition-all duration-300 ease-in-out"
         >
           Improve your Coding skills
         </button>
