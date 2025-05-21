@@ -1,11 +1,5 @@
-import Auth from "../../../Components/Auth";
-
 const Signin = () => {
-  return (
-    <div className="bg-white">
-      <Auth type="signin" />
-    </div>
-  );
+  return <div className="bg-white"></div>;
 };
 
 export default Signin;
