@@ -6,13 +6,10 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav
-      className="flex justify-between items-center p-4 w-full"
-      role="navigation"
-    >
+    <nav className="navigation fixed top-0 left-0 z-20 lg:h-[4.5rem] p-3 lg:p-5 flex justify-between  items-center w-full bg-gradient-to-t from-slate-950/30 to-slate-950  ">
       <div className="text-xl font-bold">CodeCLimb</div>
 
-      <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-6">
+      <div className="hidden lg:flex gap-12 w-fit justify-center font-medium items-center text-sm text-gray-300/90 text-uppercase  ">
         <Link href="/career" className="cursor-pointer">
           Career Roadmap
         </Link>
