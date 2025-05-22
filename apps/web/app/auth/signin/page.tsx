@@ -26,8 +26,16 @@ const Signin = () => {
               className="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
-          <button></button>
+          <button
+            type="submit"
+            className="relative px-6 py-3 rounded-xl text-xs bg-slate-800 w-fit h-fit  outline outline-offset-2 outline-slate-800 hover:bg-gradient-to-br from-slate-500 via-cyan-600 to-teal-500
+hover:outline-cyan-600
+glass-effect transition-all duration-300 ease-in-out"
+          >
+            Sign in
+          </button>
         </form>
+        <p>Dont have a account</p>
       </div>
     </div>
   );
