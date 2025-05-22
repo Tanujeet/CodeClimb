@@ -15,6 +15,28 @@ const Signin = () => {
             <span>Continue with github</span>
           </button>
         </div>
+        <div className="my-6 flex  items-center gap-4">
+          <hr className="flex-grow border-white/20" />
+          <span>or</span>
+          <hr className="flex-grow border-white/20" />
+        </div>
+        <form className="space-y-3">
+          <label>
+            Email
+            <input
+              type="email"
+              className="w-full border border-white/10 rounded-lg my-2"
+              placeholder=""
+            />
+          </label>
+          <label>
+            Password
+            <input
+              type="password"
+              className="w-full border border-white/10 rounded-lg my-2"
+            />
+          </label>
+        </form>
       </div>
     </div>
   );
