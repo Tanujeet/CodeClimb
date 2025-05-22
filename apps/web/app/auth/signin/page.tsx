@@ -12,7 +12,7 @@ const Signin = () => {
               alt="GitHub"
               className="w-5 h-5 invert"
             />
-            <span>Continue with github</span>
+            <span>Continue with Github</span>
           </button>
         </div>
         <div className="my-6 flex  items-center gap-4">
