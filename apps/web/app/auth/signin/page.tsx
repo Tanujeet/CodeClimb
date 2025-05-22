@@ -21,19 +21,19 @@ const Signin = () => {
           <hr className="flex-grow border-white/20" />
         </div>
         <form className="space-y-3">
-          <label>
+          <label className="block text-sm font-medium text-white">
             Email
             <input
               type="email"
-              className="w-full border border-white/10 rounded-lg my-2"
+              className="mt-1 block w-full p-3 border border-white/20 text-white rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
               placeholder=""
             />
           </label>
-          <label>
+          <label className="block text-sm font-medium text-white">
             Password
             <input
               type="password"
-              className="w-full border border-white/10 rounded-lg my-2"
+              className="mt-1 block w-full p-3 border border-white/20 text-white rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
             />
           </label>
         </form>
