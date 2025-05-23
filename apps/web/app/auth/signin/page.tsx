@@ -7,20 +7,28 @@ const Signin = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
 
-  function handleSumbit() {
-    if (email === "") {
-      setError("Email is required");
+  function handleSubmit() {
+    const trimmedEmail = email.trim();
+    const trimmedPassword = Password.trim();
+
+    if (!trimmedEmail) {
+      setError("Email is required.");
       return;
     }
-    if (!email.includes("@")) {
-      setError("Please enter a valid email");
+
+    if (!trimmedEmail.includes("@") || !trimmedEmail.includes(".")) {
+      setError("Please enter a valid email address.");
       return;
     }
-    if (Password === "") {
-      setError("password is required");
+
+    if (!trimmedPassword) {
+      setError("Password is required.");
       return;
     }
+
+    // All validations passed
     setError("");
+    // Proceed with sign in (e.g., API call)
   }
 
   return (
@@ -66,7 +74,7 @@ const Signin = () => {
           {error && <p className="text-red-500">{error}</p>}
           <div className="flex justify-center mt-3 ">
             <button
-              onClick={handleSumbit}
+              onClick={handleSubmit}
               type="submit"
               className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-md hover:from-blue-500 hover:to-indigo-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300"
             >
