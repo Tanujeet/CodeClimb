@@ -1,4 +1,28 @@
+"use client";
+
+import { useState } from "react";
+
 const Signin = () => {
+  const [Password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  function handleSumbit() {
+    if (email === "") {
+      setError("Email is required");
+      return;
+    }
+    if (!email.includes("@")) {
+      setError("Please enter a valid email");
+      return;
+    }
+    if (Password === "") {
+      setError("password is required");
+      return;
+    }
+    setError("");
+  }
+
   return (
     <div className="w-screen h-screen flex justify-center items-center">
       <div className="w-full max-w-md bg-white/5 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-white/10">
@@ -26,7 +50,7 @@ const Signin = () => {
             <input
               type="email"
               className="mt-1 block w-full p-3 border border-white/20 text-white rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
-              placeholder=""
+              onChange={(e) => setEmail(e.target.value)}
             />
           </label>
           <label className="block text-sm font-medium text-white">
@@ -34,17 +58,22 @@ const Signin = () => {
             <input
               type="password"
               className="mt-1 block w-full p-3 border border-white/20 text-white rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              onChange={(e) => {
+                setPassword(e.target.value);
+              }}
             />
           </label>
+          {error && <p className="text-red-500">{error}</p>}
+          <div className="flex justify-center mt-3 ">
+            <button
+              onClick={handleSumbit}
+              type="submit"
+              className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-md hover:from-blue-500 hover:to-indigo-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300"
+            >
+              Sign In
+            </button>
+          </div>
         </form>
-        <div className="flex justify-center mt-3 ">
-          <button
-            type="submit"
-            className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-md hover:from-blue-500 hover:to-indigo-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300"
-          >
-            Sign In
-          </button>
-        </div>
       </div>
     </div>
   );
