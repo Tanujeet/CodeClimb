@@ -37,6 +37,14 @@ const Signin = () => {
             />
           </label>
         </form>
+        <div className="flex justify-center mt-3 ">
+          <button
+            type="submit"
+            className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-md hover:from-blue-500 hover:to-indigo-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300"
+          >
+            Sign In
+          </button>
+        </div>
       </div>
     </div>
   );
