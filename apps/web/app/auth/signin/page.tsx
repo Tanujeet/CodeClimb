@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 
 import { useState } from "react";
 
@@ -7,7 +8,9 @@ const Signin = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
 
-  function handleSubmit() {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
     const trimmedEmail = email.trim();
     const trimmedPassword = Password.trim();
 
@@ -26,9 +29,7 @@ const Signin = () => {
       return;
     }
 
-    // All validations passed
     setError("");
-    // Proceed with sign in (e.g., API call)
   }
 
   return (
@@ -52,7 +53,7 @@ const Signin = () => {
           <span>or</span>
           <hr className="flex-grow border-white/20" />
         </div>
-        <form className="space-y-3">
+        <form className="space-y-3" onSubmit={handleSubmit}>
           <label className="block text-sm font-medium text-white">
             Email
             <input
@@ -74,7 +75,6 @@ const Signin = () => {
           {error && <p className="text-red-500">{error}</p>}
           <div className="flex justify-center mt-3 ">
             <button
-              onClick={handleSubmit}
               type="submit"
               className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-md hover:from-blue-500 hover:to-indigo-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300"
             >

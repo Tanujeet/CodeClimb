@@ -6,7 +6,7 @@ const page = () => {
       className="bg-white
 "
     >
-      <Auth type="signup" />
+      <Auth />
     </div>
   );
 };
