@@ -1,4 +1,3 @@
-// app/api/signup/route.ts
 import { NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
 
@@ -6,34 +5,27 @@ const prisma = new PrismaClient();
 
 export async function POST(req: Request) {
   try {
-    const { email, password,  } = await req.json();
-
+    const { email, password } = await req.json();
 
     if (!email || !password) {
-      return NextResponse.json(
-        { error: "Missing required fields" },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
 
-    const existingUser = await prisma.user.findUnique({
+    const user = await prisma.user.findUnique({
       where: { email },
     });
-    if (existingUser) {
-      return NextResponse.json(
-        { error: "User already exists" },
-        { status: 409 }
-      );
+
+    if (!user) {
+      return NextResponse.json({ error: "User not found" }, { status: 404 });
     }
 
-  
-    const newUser = await prisma.user.create({
-      data: { email, password, }, 
-    });
+    if (password !== user.password) {
+      return NextResponse.json({ error: "Invalid password" }, { status: 401 });
+    }
 
     return NextResponse.json(
-      { message: "User created successfully", user: newUser },
-      { status: 201 }
+      { message: "Login successful", user },
+      { status: 200 }
     );
   } catch (error) {
     return NextResponse.json(

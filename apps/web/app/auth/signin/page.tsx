@@ -1,18 +1,20 @@
 "use client";
 import React from "react";
+import axios from "axios";
+import { signIn } from "next-auth/react";
 
 import { useState } from "react";
 
 const Signin = () => {
-  const [Password, setPassword] = useState("");
+  const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     const trimmedEmail = email.trim();
-    const trimmedPassword = Password.trim();
+    const trimmedPassword = password.trim();
 
     if (!trimmedEmail) {
       setError("Email is required.");
@@ -30,6 +32,20 @@ const Signin = () => {
     }
 
     setError("");
+
+    try {
+      const response = await axios.post("/api/signin", {
+        email: trimmedEmail,
+        Password: trimmedPassword,
+      });
+      console.log("Sign in succesfull", response.data);
+    } catch (error: any) {
+      if (error.response) {
+        setError(error.response.data.error || "Something went wrong");
+      } else {
+        setError("Network error. Please try again.");
+      }
+    }
   }
 
   return (
@@ -39,7 +55,10 @@ const Signin = () => {
           Sign in
         </h2>
         <div className="space-y-3">
-          <button className="w-full flex items-center justify-center gap-3 border border-white/10 bg-white/10 text-white rounded-lg px-4 py-2 hover:bg-white/20 transition ">
+          <button
+            className="w-full flex items-center justify-center gap-3 border border-white/10 bg-white/10 text-white rounded-lg px-4 py-2 hover:bg-white/20 transition "
+            onClick={() => signIn("github")}
+          >
             <img
               src="https://www.svgrepo.com/show/512317/github-142.svg"
               alt="GitHub"
