@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { SessionProvider } from "next-auth/react";
-
 import "./globals.css";
+import { Providers } from "../Components/Providers";
 
 export const metadata: Metadata = {
   title: "CodeClimb",
@@ -15,9 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <SessionProvider>
-        <body className="bg-black text-white">{children}</body>
-      </SessionProvider>
+      <body className="bg-black text-white">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
