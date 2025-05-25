@@ -35,9 +35,11 @@ const Signin = () => {
 
     try {
       const response = await axios.post("/api/signin", {
+        type: "register",
         email: trimmedEmail,
-        Password: trimmedPassword,
+        password: trimmedPassword,
       });
+      
       console.log("Sign in succesfull", response.data);
     } catch (error: any) {
       if (error.response) {
