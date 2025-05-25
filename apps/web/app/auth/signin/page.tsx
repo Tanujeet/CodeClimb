@@ -41,6 +41,17 @@ const Signin = () => {
       });
       
       console.log("Sign in succesfull", response.data);
+
+
+      const loginRes = await axios.post("/api/signin", {
+        type: "login",
+        email: trimmedEmail,
+        password: trimmedPassword,
+      });
+      console.log("Logged in", loginRes.data);
+
+
+
     } catch (error: any) {
       if (error.response) {
         setError(error.response.data.error || "Something went wrong");
