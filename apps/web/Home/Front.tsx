@@ -27,7 +27,7 @@ const router = useRouter();
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="relative px-6 py-3 rounded-xl text-xs bg-slate-800 w-fit h-fit  outline outline-offset-2 outline-slate-800 hover:bg-gradient-to-br from-slate-500 via-cyan-600 to-teal-500
+            className="relative px-6 py-3 rounded-xl text-xs bg-cyan-600 w-fit h-fit  outline outline-offset-2 outline-slate-800 hover:bg-gradient-to-br from-slate-500 via-cyan-600 to-teal-500
   hover:outline-cyan-600
   glass-effect transition-all duration-300 ease-in-out"
           >
