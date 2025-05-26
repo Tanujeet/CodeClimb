@@ -2,6 +2,7 @@
 
 import Navbar from "../Components/Navbar";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 const page = () => {
   const router = useRouter();
@@ -21,14 +22,17 @@ const page = () => {
               Climb From Beginner To Pro With Real-World Coding Challenges.
             </p>
           </div>
-          <button
+          <motion.button
             onClick={() => router.push("/auth/signin")}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300 }}
             className="relative px-6 py-3 rounded-xl text-xs bg-slate-800 w-fit h-fit  outline outline-offset-2 outline-slate-800 hover:bg-gradient-to-br from-slate-500 via-cyan-600 to-teal-500
-hover:outline-cyan-600
-glass-effect transition-all duration-300 ease-in-out"
+    hover:outline-cyan-600
+    glass-effect transition-all duration-300 ease-in-out"
           >
             Improve your Coding skills
-          </button>
+          </motion.button>
         </div>
         <div className="w-full lg:w-[70%] mx-auto flex flex-col gap-8 my-24 ">
           <h2 className="text-[1rem] lg:text-[1.5rem] text-gray-300 text-center font-semibold mx-auto max-w-[320px] lg:max-w-[400px]">
@@ -36,36 +40,51 @@ glass-effect transition-all duration-300 ease-in-out"
             Improve Your Coding Skills
           </h2>
           <div className="flex gap-3 justify-between mt-7">
-            <img
+            <motion.img
               src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
               alt="HTML5 Logo"
               width="80"
               height="80"
+              initial={{ scale: 1.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             />
 
-            <img
+            <motion.img
               src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
               alt="CSS3 Logo"
               width="80"
               height="80"
+              initial={{ scale: 1.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             />
-            <img
+            <motion.img
               src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
               alt="JavaScript Logo"
               width="80"
-              height="10"
+              height="80"
+              initial={{ scale: 1.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             />
-            <img
+            <motion.img
               src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
               alt="React Logo"
               width="80"
               height="80"
+              initial={{ scale: 1.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             />
-            <img
+            <motion.img
               src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
               alt="Node.js Logo"
               width="80"
               height="80"
+              initial={{ scale: 1.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             />
           </div>
         </div>

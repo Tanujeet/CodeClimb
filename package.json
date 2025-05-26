@@ -28,6 +28,7 @@
     "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.2",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.12.2",
     "motion": "^12.12.1",
     "next-auth": "^4.24.11",
     "tailwind-merge": "^3.3.0"
