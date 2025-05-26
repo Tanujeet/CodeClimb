@@ -30,11 +30,44 @@ glass-effect transition-all duration-300 ease-in-out"
             Improve your Coding skills
           </button>
         </div>
-        <div className="w-full lg:w-[70%] mx-auto flex flex-col gap-8 my-24">
+        <div className="w-full lg:w-[70%] mx-auto flex flex-col gap-8 my-24 ">
           <h2 className="text-[1rem] lg:text-[1.5rem] text-gray-300 text-center font-semibold mx-auto max-w-[320px] lg:max-w-[400px]">
             Build Your Projects and <br />
-            Land Jobs at Top companies
+            Improve Your Coding Skills
           </h2>
+          <div className="flex gap-3 justify-between mt-7">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+              alt="HTML5 Logo"
+              width="80"
+              height="80"
+            />
+
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+              alt="CSS3 Logo"
+              width="80"
+              height="80"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="JavaScript Logo"
+              width="80"
+              height="10"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+              alt="React Logo"
+              width="80"
+              height="80"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+              alt="Node.js Logo"
+              width="80"
+              height="80"
+            />
+          </div>
         </div>
       </div>
     </div>
