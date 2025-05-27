@@ -28,11 +28,11 @@ const Front = () => {
             Explore projects
           </motion.button>
         </div>
-        <section className="w-full lg:w-[70%] mx-auto flex flex-col gap-8 my-24">
-          <h2 className="!text-[1rem] lg:!text-[1.5rem] !text-gray-300 text-center font-semibold mx-auto max-w-[320px] lg:max-w-[400px]">
+        <section className="w-full lg:w-[70%] max-w-screen-lg mx-auto px-4 flex flex-col gap-8 my-24">
+          <h2 className="text-[1rem] lg:text-[1.5rem] text-gray-300 text-center font-semibold mx-auto max-w-[320px] lg:max-w-[400px]">
             Build Your Projects with Top Skills
           </h2>
-          <div className="flex flex-wrap justify-center gap-10 max-w-4xl">
+          <div className="flex flex-wrap justify-center gap-10 max-w-4xl mx-auto">
             {[
               {
                 src: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
@@ -65,7 +65,7 @@ const Front = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 whileHover={{ scale: 1.2 }}
-                className="cursor-pointer"
+                className="cursor-pointer sm:w-16 sm:h-16 w-20 h-20" // smaller icons on small screens
               />
             ))}
           </div>

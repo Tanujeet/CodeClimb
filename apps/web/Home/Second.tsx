@@ -32,18 +32,16 @@ const Second = () => {
             build confidence.
           </p>
         </div>
-        <div className="flex flex-col gap-28">
-          <div className="flex flex-col lg:flex-row gap-3 lg:gap-12 px-4 lg:px-24 items-center mt-20">
-            {/* Left side (can add image or illustration later) */}
+        <div className="flex flex-col gap-20">
+          <div className="flex flex-col lg:flex-row gap-3 lg:gap-10 px-4 lg:px-24 items-center mt-20">
             <div className="lg:w-6/12 flex justify-center">
               <img
                 src="/undraw_code-thinking_0vf2.svg"
-                alt=""
-                className="h-80 w-100"
+                alt="Person thinking while coding illustration"
+                className="h-64 md:h-80 lg:h-96 w-auto max-w-full"
               />
             </div>
 
-            {/* Right side text content */}
             <div className="lg:w-6/12 px-6 text-center lg:text-left">
               <h3 className="text-[1.5rem] lg:text-[2.5rem] font-semibold text-white leading-snug">
                 Escape Tutorial Hell by Building Projects
@@ -51,14 +49,12 @@ const Second = () => {
               <p className="text-slate-400 max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
                 Tutorials are great, but they can trap you if you never build.
                 The best way to learn is by creating real projects that put your
-                skills to the test and help you grow faster
+                skills to the test and help you grow faster.
               </p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row gap-3 lg:gap-12 px-4 lg:px-24 items-center mt-20">
-            {/* Left side (can add image or illustration later) */}
 
-            {/* Right side text content */}
+          <div className="flex flex-col lg:flex-row gap-3 lg:gap-10 px-4 lg:px-24 items-center mt-20">
             <div className="lg:w-6/12 px-6 text-center lg:text-left">
               <h3 className="text-[1.5rem] lg:text-[2.5rem] font-semibold text-white leading-snug">
                 Learn New Skills Daily
@@ -68,27 +64,27 @@ const Second = () => {
                 small coding concept, a design principle, or a productivity
                 trick, daily skill-building keeps your mind sharp and your
                 progress consistent. Each day adds up—turning small wins into
-                big achievements over time
+                big achievements over time.
               </p>
             </div>
             <div className="lg:w-6/12 flex justify-center">
               <img
-                src="/undraw_building-a-website_1wrp.svg"
-                alt=""
-                className="h-80 w-100"
+                src="/undraw_programming_65t2.svg"
+                alt="Illustration of building a website"
+                className="h-64 md:h-80 lg:h-96 w-auto max-w-full"
               />
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row gap-3 lg:gap-12 px-4 lg:px-24 items-center mt-20">
-            {/* Left side (can add image or illustration later) */}
+
+          <div className="flex flex-col lg:flex-row gap-3 lg:gap-10 px-4 lg:px-24 items-center mt-20">
             <div className="lg:w-6/12 flex justify-center">
               <img
                 src="/undraw_creative-flow_t3kz.svg"
-                className="h-80 w-100"
+                alt="Creative workflow illustration"
+                className="h-64 md:h-80 lg:h-96 w-auto max-w-full"
               />
             </div>
 
-            {/* Right side text content */}
             <div className="lg:w-6/12 px-6 text-center lg:text-left">
               <h3 className="text-[1.5rem] lg:text-[2.5rem] font-semibold text-white leading-snug">
                 Build Your Portfolios
