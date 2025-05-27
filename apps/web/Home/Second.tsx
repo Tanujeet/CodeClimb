@@ -1,6 +1,6 @@
 const Second = () => {
   return (
-    <div className="h-screen w-screen relative z-10 mt-6">
+    <div className="min-h-screen w-full relative z-10 mt-6 px-4 bg-black text-white">
       <div className="mt-10">
         <div className="w-fit mx-auto">
           <svg

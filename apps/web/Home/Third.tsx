@@ -1,6 +1,8 @@
 const Third = () => {
   return (
-    <div>Third</div>
+    <div className="flex justify-center mt-50">
+      <div>hy bye</div>
+    </div>
   );
 };
 

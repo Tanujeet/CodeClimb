@@ -7,20 +7,35 @@ import Button from "../Components/Button";
 
 const Front = () => {
   const router = useRouter();
+
   return (
-    <div>
+    <div className="min-h-screen w-full bg-black text-white">
       <Navbar />
-      <div className="relative flex flex-col gap-12 z-10">
-        <div className="relative mt-30 ml-15 lg:mt-40 ">
-          <h1 className="font-semibold text-[2.2rem] md:text-[3rem] lg:text-[4rem] max-w-[800px] mt-4 z-10">
+
+      <div className="relative flex flex-col gap-12 z-10 px-4">
+        {/* Hero Section */}
+        <div className="mt-32 flex flex-col items-center text-center">
+          <h1 className="font-semibold text-[2.2rem] md:text-[3rem] lg:text-[4rem] max-w-[800px] leading-tight">
             Climb the Code Ladder <br />
-            <span>Build Better</span>
+            <span className="text-violet-400">Build Better</span>
           </h1>
-          <p className="text-gray-200 max-w-[600px] text-md lg:text-lg block font-light mt-4"></p>
-          <Button title="Explore Projects" />
+          <p className="text-gray-300 max-w-[600px] text-md lg:text-lg font-light mt-4">
+            Learn by building real-world projects. Step up from tutorials to
+            practical experience.
+          </p>
         </div>
-        <section className="w-full lg:w-[70%] max-w-screen-lg mx-auto px-4 flex flex-col gap-8 my-24">
-          <h2 className="text-[1rem] lg:text-[1.5rem] text-gray-300 text-center font-semibold mx-auto max-w-[320px] lg:max-w-[400px]">
+
+        {/* Button */}
+        <div className="flex justify-center">
+          <Button
+            title="Explore Projects"
+            onClick={() => router.push("/projects")}
+          />
+        </div>
+
+        {/* Skills Section */}
+        <section className="w-full lg:w-[70%] max-w-screen-lg mx-auto flex flex-col gap-8 my-24">
+          <h2 className="text-[1.2rem] lg:text-[1.5rem] text-gray-300 text-center font-semibold mx-auto max-w-[400px]">
             Build Your Projects with Top Skills
           </h2>
           <div className="flex flex-wrap justify-center gap-10 max-w-4xl mx-auto">
@@ -56,7 +71,7 @@ const Front = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 whileHover={{ scale: 1.2 }}
-                className="cursor-pointer sm:w-16 sm:h-16 w-20 h-20" // smaller icons on small screens
+                className="cursor-pointer sm:w-16 sm:h-16 w-20 h-20"
               />
             ))}
           </div>
