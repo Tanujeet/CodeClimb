@@ -2,8 +2,9 @@
 @import "tailwindcss";
 
 body{
-    background-color: rgb(5, 7, 26);
+    background-color: black;
     margin: 0;
     padding: 0;
     height: 100%;
+   
 }
