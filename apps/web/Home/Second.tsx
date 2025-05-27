@@ -99,6 +99,7 @@ const Second = () => {
           </div>
         </div>
       </div>
+      <div className="border border-white"></div>
     </div>
   );
 };

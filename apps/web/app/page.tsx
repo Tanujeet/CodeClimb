@@ -6,7 +6,7 @@ import Third from "../Home/Third";
 
 const page = () => {
   return (
-    <div>
+    <div className="font-[poppins]">
       <Front />
       <Second />
       <Third />
