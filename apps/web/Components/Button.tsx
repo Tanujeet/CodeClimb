@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       id={id}
       className={clsx(
-        "  bg-purple-200 group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full px-4 py-2 text-black",
+        "  bg-violet-50 group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full px-4 py-2 text-black",
         containerClass
       )}
     >
