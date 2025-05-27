@@ -8,8 +8,11 @@ body{
     height: 100%;
   
 }
+
 @font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-   
+    font-family: 'Knewave';
+    src: url('/fonts/PoetsenOne-Regular.ttf') format('truetype');
+
+  
   }
+  
