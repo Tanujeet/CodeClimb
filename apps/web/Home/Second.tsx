@@ -24,7 +24,7 @@ const Second = () => {
             is by
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-500 to-teal-400">
-              Building projects
+              Building Projects
             </span>
           </h3>
           <p className="text-gray-300 mt-4 max-w-[600px]">

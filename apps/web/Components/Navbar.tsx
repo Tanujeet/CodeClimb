@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
+import Button from "./Button";
 
 const Navbar = () => {
   const router = useRouter();
@@ -25,26 +26,17 @@ const Navbar = () => {
 
       {status === "loading" ? null : session?.user ? (
         <div className="flex gap-3">
-          <button
+          <Button
+            title="Dashboard"
             onClick={() => router.push("/dashboard")}
-            className="relative px-6 py-3 rounded-xl text-xs bg-slate-800 outline outline-offset-2 outline-slate-800 hover:bg-gradient-to-br from-slate-500 via-cyan-600 to-teal-500 hover:outline-cyan-600 transition-all duration-300 ease-in-out"
-          >
-            Dashboard
-          </button>
-          <button
-            onClick={() => signOut()}
-            className="relative px-6 py-3 rounded-xl text-xs bg-red-600/80 outline outline-offset-2 outline-red-600 hover:bg-gradient-to-br from-red-500 via-red-600 to-red-700 hover:outline-red-500 transition-all duration-300 ease-in-out"
-          >
-            Log Out
-          </button>
+          ></Button>
+          <Button title="Log Out" onClick={() => signOut()}></Button>
         </div>
       ) : (
-        <button
+        <Button
+          title="Get started"
           onClick={() => router.push("/auth/signin")}
-          className="relative px-6 py-3 rounded-xl text-xs bg-slate-800 w-fit h-fit outline outline-offset-2 outline-slate-800 hover:bg-gradient-to-br from-slate-500 via-cyan-600 to-teal-500 hover:outline-cyan-600 transition-all duration-300 ease-in-out"
-        >
-          Get Started
-        </button>
+        ></Button>
       )}
     </nav>
   );
