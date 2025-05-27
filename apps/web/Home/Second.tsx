@@ -32,6 +32,76 @@ const Second = () => {
             build confidence.
           </p>
         </div>
+        <div className="flex flex-col gap-28">
+          <div className="flex flex-col lg:flex-row gap-3 lg:gap-12 px-4 lg:px-24 items-center mt-20">
+            {/* Left side (can add image or illustration later) */}
+            <div className="lg:w-6/12 flex justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 800 600"
+                className="max-w-[400px] w-full h-auto"
+              >
+                <rect width="800" height="600" fill="#0f172a" />
+                <g>
+                  <rect
+                    x="200"
+                    y="180"
+                    width="400"
+                    height="280"
+                    rx="20"
+                    fill="#1e293b"
+                  />
+                  <rect
+                    x="230"
+                    y="220"
+                    width="340"
+                    height="40"
+                    rx="5"
+                    fill="#0ea5e9"
+                  />
+                  <rect
+                    x="230"
+                    y="280"
+                    width="280"
+                    height="30"
+                    rx="4"
+                    fill="#38bdf8"
+                  />
+                  <rect
+                    x="230"
+                    y="330"
+                    width="240"
+                    height="25"
+                    rx="4"
+                    fill="#7dd3fc"
+                  />
+                  <rect
+                    x="230"
+                    y="370"
+                    width="180"
+                    height="25"
+                    rx="4"
+                    fill="#bae6fd"
+                  />
+                  <circle cx="240" cy="200" r="6" fill="#f87171" />
+                  <circle cx="260" cy="200" r="6" fill="#facc15" />
+                  <circle cx="280" cy="200" r="6" fill="#4ade80" />
+                </g>
+              </svg>
+            </div>
+
+            {/* Right side text content */}
+            <div className="lg:w-6/12 px-6 text-center lg:text-left">
+              <h3 className="text-[1.5rem] lg:text-[2.5rem] font-semibold text-white leading-snug">
+                Escape Tutorial Hell by Building Projects
+              </h3>
+              <p className="text-slate-400 max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
+                Stop watching endless tutorials. Learn effectively by creating
+                simple, real-world mini projects.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
