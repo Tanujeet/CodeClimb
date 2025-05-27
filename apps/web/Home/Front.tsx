@@ -12,12 +12,14 @@ const Front = () => {
     <div className="min-h-screen w-full bg-black text-white">
       <Navbar />
 
-      <div className="relative flex flex-col gap-12 z-10 px-4">
+      <div className="relative flex flex-col gap-12 z-10 px-4 mt-25">
         {/* Hero Section */}
         <div className="mt-32 flex flex-col items-center text-center">
           <h1 className="font-semibold text-[2.2rem] md:text-[3rem] lg:text-[4rem] max-w-[800px] leading-tight">
             Climb the Code Ladder <br />
-            <span className="text-violet-400">Build Better</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-cyan-400 to-cyan-500 font-extrabold">
+              Build Better
+            </span>
           </h1>
           <p className="text-gray-300 max-w-[600px] text-md lg:text-lg font-light mt-4">
             Learn by building real-world projects. Step up from tutorials to
