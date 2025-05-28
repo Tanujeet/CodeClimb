@@ -9,10 +9,10 @@ const Navbar = () => {
   const { data: session, status } = useSession();
 
   return (
-    <nav className="navigation fixed top-0 left-0 z-20 lg:h-[4.5rem] p-3 lg:p-5 flex justify-between items-center w-full bg-gradient-to-t from-slate-950/30 to-slate-950">
+    <nav className="navigation fixed top-0 left-0 z-20 lg:h-[4.5rem] p-3 lg:p-5 flex justify-between items-center w-full bg-[#d4c9c9] text-black">
       <div className="text-xl font-bold">CodeCLimb</div>
 
-      <div className="hidden lg:flex gap-12 w-fit justify-center font-medium items-center text-sm text-gray-300/90 uppercase">
+      <div className="hidden lg:flex gap-12 w-fit justify-center font-medium items-center text-sm text-black uppercase">
         <Link href="/career" className="cursor-pointer">
           Career Roadmap
         </Link>

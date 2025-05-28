@@ -5,7 +5,7 @@ const Third = () => {
         Career Roadmap
       </h1>
       <h2 className="mt-15 text-4xl ml-10">Front End Development</h2>
-      <p className="text-gray-300 max-w-[600px] text-md lg:text-lg font-light mt-4 ml-10">
+      <p className="text-black max-w-[600px] text-md lg:text-lg font-light mt-4 ml-10">
         This roadmap will help you to practice your front end skills and to
         master it with html css and JavaScript
       </p>
@@ -20,11 +20,13 @@ const Third = () => {
                   className="w-full rounded-md group-hover:scale-105 transition duration-300"
                 />
                 <div className="mt-3 p-2">
-                  <span className="text-sm text-gray-300 font-semibold">
+                  <span className="text-sm text-black font-semibold">
                     Beginner
                   </span>
-                  <h1 className="text-2xl mt-2 font-bold">Todo List</h1>
-                  <p className="text-slate-400 mt-1">
+                  <h1 className="text-2xl mt-2 font-bold text-black">
+                    Todo List
+                  </h1>
+                  <p className="text-black mt-1">
                     A simple task management app to track your daily goals.
                     Built with HTML, CSS & JS.
                   </p>
@@ -37,11 +39,13 @@ const Third = () => {
                   className="w-full rounded-md group-hover:scale-105 transition duration-300"
                 />
                 <div className="mt-3 p-2">
-                  <span className="text-sm text-gray-300 font-semibold">
+                  <span className="text-sm text-black font-semibold">
                     Beginner
                   </span>
-                  <h1 className="text-2xl mt-2 font-bold">Weather Checker</h1>
-                  <p className="text-slate-400 mt-1">
+                  <h1 className="text-2xl mt-2 font-bold text-black">
+                    Weather Checker
+                  </h1>
+                  <p className="text-black mt-1">
                     A clean and responsive app to check current weather
                     conditions by city name. Built using HTML, CSS & JavaScript
                     with live weather API integration
@@ -55,13 +59,13 @@ const Third = () => {
                   className="w-full rounded-md group-hover:scale-105 transition duration-300"
                 />
                 <div className="mt-3 p-2">
-                  <span className="text-sm text-gray-300 font-semibold">
+                  <span className="text-sm text-blackfont-semibold">
                     Beginner
                   </span>
-                  <h1 className="text-2xl mt-2 font-bold">
+                  <h1 className="text-2xl mt-2 font-bold text-black">
                     Random Quote Generator
                   </h1>
-                  <p className="text-slate-400 mt-1">
+                  <p className="text-black mt-1">
                     A simple app that displays a new inspirational quote on each
                     click. Uses JavaScript to dynamically update content.
                   </p>
@@ -74,11 +78,13 @@ const Third = () => {
                   className="w-full rounded-md group-hover:scale-105 transition duration-300"
                 />
                 <div className="mt-3 p-2">
-                  <span className="text-sm text-gray-300 font-semibold">
+                  <span className="text-sm text-black font-semibold">
                     Beginner
                   </span>
-                  <h1 className="text-2xl mt-2 font-bold">Calculator</h1>
-                  <p className="text-slate-400 mt-1">
+                  <h1 className="text-2xl mt-2 font-bold text-black">
+                    Calculator
+                  </h1>
+                  <p className="text-black mt-1">
                     A basic calculator to perform arithmetic operations like
                     addition, subtraction, multiplication, and division. Built
                     with HTML, CSS & JavaScript.

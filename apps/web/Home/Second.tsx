@@ -1,6 +1,6 @@
 const Second = () => {
   return (
-    <div className="min-h-screen w-full relative z-10 mt-6 px-4 bg-black text-white">
+    <div className="min-h-screen w-full relative z-10 mt-6 px-4 bg-[#d4c9c9] text-black">
       <div className="mt-10">
         <div className="w-fit mx-auto">
           <svg
@@ -27,7 +27,7 @@ const Second = () => {
               Building Projects
             </span>
           </h3>
-          <p className="text-gray-400 mt-4 max-w-[600px] text-lg">
+          <p className="text-black mt-4 max-w-[600px] text-lg">
             Practice by doing. Projects help you apply what you’ve learned and
             build confidence.
           </p>
@@ -44,10 +44,10 @@ const Second = () => {
             </div>
 
             <div className="lg:w-6/12 px-6 text-center lg:text-left">
-              <h3 className="text-[1.5rem] lg:text-[2.5rem] font-semibold text-violet-400 leading-snug">
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-cyan-400 to-cyan-500 font-extrabold text-[1.5rem] lg:text-[2.5rem]">
                 Escape Tutorial Hell by Building Projects
               </h3>
-              <p className="text-gray-400 max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
+              <p className="text-black max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
                 Tutorials are great, but they can trap you if you never build.
                 The best way to learn is by creating real projects that put your
                 skills to the test and help you grow faster.
@@ -58,10 +58,10 @@ const Second = () => {
           {/* Second Section */}
           <div className="flex flex-col lg:flex-row gap-3 lg:gap-10 px-4 lg:px-24 items-center mt-20">
             <div className="lg:w-6/12 px-6 text-center lg:text-left">
-              <h3 className="text-[1.5rem] lg:text-[2.5rem] font-semibold text-violet-400 leading-snug">
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-cyan-400 to-cyan-500 font-extrabold text-[1.5rem] lg:text-[2.5rem]">
                 Learn New Skills Daily
               </h3>
-              <p className="text-gray-400 max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
+              <p className="text-black max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
                 Stay ahead by learning something new every day. Whether it’s a
                 small coding concept, a design principle, or a productivity
                 trick, daily skill-building keeps your mind sharp and your
@@ -89,10 +89,10 @@ const Second = () => {
             </div>
 
             <div className="lg:w-6/12 px-6 text-center lg:text-left">
-              <h3 className="text-[1.5rem] lg:text-[2.5rem] font-semibold text-violet-400 leading-snug">
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-cyan-400 to-cyan-500 font-extrabold text-[1.5rem] lg:text-[2.5rem]">
                 Build Your Portfolios
               </h3>
-              <p className="text-gray-400 max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
+              <p className="text-black max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
                 Building projects not only sharpens your skills but also helps
                 you create a portfolio that showcases your abilities to
                 employers and clients. A strong portfolio is your best tool to

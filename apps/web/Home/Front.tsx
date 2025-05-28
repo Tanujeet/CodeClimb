@@ -9,7 +9,7 @@ const Front = () => {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen w-full bg-black text-white">
+    <div className="min-h-screen w-full bg-[#d4c9c9] text-black">
       <Navbar />
 
       <div className="relative flex flex-col gap-12 z-10 px-4 mt-25">
@@ -21,7 +21,7 @@ const Front = () => {
               Build Better
             </span>
           </h1>
-          <p className="text-gray-300 max-w-[600px] text-md lg:text-lg font-light mt-4">
+          <p className="text-black max-w-[600px] text-md lg:text-lg font-light mt-4">
             Learn by building real-world projects. Step up from tutorials to
             practical experience.
           </p>
@@ -37,7 +37,7 @@ const Front = () => {
 
         {/* Skills Section */}
         <section className="w-full lg:w-[70%] max-w-screen-lg mx-auto flex flex-col gap-8 my-24">
-          <h2 className="text-[1.2rem] lg:text-[1.5rem] text-gray-300 text-center font-semibold mx-auto max-w-[400px]">
+          <h2 className="text-[1.2rem] lg:text-[1.5rem] text-black text-center font-semibold mx-auto max-w-[400px]">
             Build Your Projects with Top Skills
           </h2>
           <div className="flex flex-wrap justify-center gap-10 max-w-4xl mx-auto">
