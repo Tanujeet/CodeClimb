@@ -37,7 +37,7 @@ const Second = () => {
           <div className="flex flex-col lg:flex-row gap-3 lg:gap-10 px-4 lg:px-24 items-center mt-20">
             <div className="lg:w-6/12 flex justify-center">
               <img
-                src="/undraw_code-thinking_0vf2.svg"
+                src="/images/undraw_code-thinking_0vf2.svg"
                 alt="Person thinking while coding illustration"
                 className="h-64 md:h-80 lg:h-96 w-auto max-w-full transition-transform duration-300 hover:scale-105"
               />
@@ -71,7 +71,7 @@ const Second = () => {
             </div>
             <div className="lg:w-6/12 flex justify-center">
               <img
-                src="/undraw_programming_65t2.svg"
+                src="/images/undraw_programming_65t2.svg"
                 alt="Illustration of building a website"
                 className="h-64 md:h-80 lg:h-96 w-auto max-w-full transition-transform duration-300 hover:scale-105"
               />
@@ -82,7 +82,7 @@ const Second = () => {
           <div className="flex flex-col lg:flex-row gap-3 lg:gap-10 px-4 lg:px-24 items-center mt-20">
             <div className="lg:w-6/12 flex justify-center">
               <img
-                src="/undraw_creative-flow_t3kz.svg"
+                src="/images/undraw_creative-flow_t3kz.svg"
                 alt="Creative workflow illustration"
                 className="h-64 md:h-80 lg:h-96 w-auto max-w-full transition-transform duration-300 hover:scale-105"
               />

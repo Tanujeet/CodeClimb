@@ -9,13 +9,82 @@ const Third = () => {
         This roadmap will help you to practice your front end skills and to
         master it with html css and JavaScript
       </p>
-      <div className="flex flex-col lg:flex-row gap-4 relative mt-4">
-        <div className="w-12/12 lg:w-8/12">
-          <div className=" text-slate-100  glass-effect-sm border-[0.5px] border-slate-700/50  grid grid-cols-1 lg:grid-cols-3 gap-4 p-2 rounded-xl max-h-[600px] overflow-hidden overflow-y-scroll scrollbar-hide">
-            <div className="relative h-full">
-              <div className="border-[0.5px] border-slate-700/90 rounded-xl p-2 block pb-4 transition ease-in-out duration-200  hover:outline outline-2 outline-offset-2 outline-blue-500 relative overflow-hidden group glass-effect-sm">
-                <img src="" alt="" />
+      <div className="flex flex-col lg:flex-row gap-4 mt-4 relative">
+        {/* Project Grid Container */}
+        <div className="w-full lg:w-8/12">
+          <div className="text-slate-100 glass-effect-sm border border-slate-700/50 rounded-xl ml-10 p-2 max-h-[600px] overflow-y-auto scrollbar-hide">
+            {/* Project Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Project Card */}
+              <div className="border border-slate-700/90 rounded-xl p-2 pb-4 transition ease-in-out duration-200 hover:outline outline-2 outline-offset-2 outline-gray-500 overflow-hidden group glass-effect-sm">
+                <img
+                  src="/images/scr_todolist1.png"
+                  alt="Screenshot of Todo List project"
+                  className="w-full rounded-md group-hover:scale-105 transition duration-300"
+                />
+                <div className="mt-3 p-2">
+                  <span className="text-sm text-gray-300 font-semibold">
+                    Beginner
+                  </span>
+                  <h1 className="text-2xl mt-2 font-bold">Todo List</h1>
+                  <p className="text-slate-400 mt-1">
+                    A simple task management app to track your daily goals.
+                    Built with HTML, CSS & JS.
+                  </p>
+                </div>
+              </div>{" "}
+              <div className="border border-slate-700/90 rounded-xl p-2 pb-4 transition ease-in-out duration-200 hover:outline outline-2 outline-offset-2 outline-gray-500 overflow-hidden group glass-effect-sm over">
+                <img
+                  src="/images/scr_todolist1.png"
+                  alt="Screenshot of Todo List project"
+                  className="w-full rounded-md group-hover:scale-105 transition duration-300"
+                />
+                <div className="mt-3 p-2">
+                  <span className="text-sm text-gray-300 font-semibold">
+                    Beginner
+                  </span>
+                  <h1 className="text-2xl mt-2 font-bold">Todo List</h1>
+                  <p className="text-slate-400 mt-1">
+                    A simple task management app to track your daily goals.
+                    Built with HTML, CSS & JS.
+                  </p>
+                </div>
               </div>
+              <div className="border border-slate-700/90 rounded-xl p-2 pb-4 transition ease-in-out duration-200 hover:outline outline-2 outline-offset-2 outline-gray-500 overflow-hidden group glass-effect-sm">
+                <img
+                  src="/images/scr_todolist1.png"
+                  alt="Screenshot of Todo List project"
+                  className="w-full rounded-md group-hover:scale-105 transition duration-300"
+                />
+                <div className="mt-3 p-2">
+                  <span className="text-sm text-gray-300 font-semibold">
+                    Beginner
+                  </span>
+                  <h1 className="text-2xl mt-2 font-bold">Todo List</h1>
+                  <p className="text-slate-400 mt-1">
+                    A simple task management app to track your daily goals.
+                    Built with HTML, CSS & JS.
+                  </p>
+                </div>
+              </div>
+              <div className="border border-slate-700/90 rounded-xl p-2 pb-4 transition ease-in-out duration-200 hover:outline outline-2 outline-offset-2 outline-gray-500 overflow-hidden group glass-effect-sm">
+                <img
+                  src="/images/scr_todolist1.png"
+                  alt="Screenshot of Todo List project"
+                  className="w-full rounded-md group-hover:scale-105 transition duration-300"
+                />
+                <div className="mt-3 p-2">
+                  <span className="text-sm text-gray-300 font-semibold">
+                    Beginner
+                  </span>
+                  <h1 className="text-2xl mt-2 font-bold">Todo List</h1>
+                  <p className="text-slate-400 mt-1">
+                    A simple task management app to track your daily goals.
+                    Built with HTML, CSS & JS.
+                  </p>
+                </div>
+              </div>
+              {/* Add more <div> cards here as needed */}
             </div>
           </div>
         </div>
