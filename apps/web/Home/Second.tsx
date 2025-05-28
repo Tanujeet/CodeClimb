@@ -102,7 +102,6 @@ const Second = () => {
           </div>
         </div>
       </div>
-      <div className="border border-violet-500 mt-16"></div>
     </div>
   );
 };
