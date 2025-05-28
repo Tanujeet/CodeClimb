@@ -17,7 +17,7 @@ const Front = () => {
         <div className="mt-32 flex flex-col items-center text-center">
           <h1 className="font-semibold text-[2.2rem] md:text-[3rem] lg:text-[4rem] max-w-[800px] leading-tight">
             Climb the Code Ladder <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-cyan-400 to-cyan-500 font-extrabold">
+            <span className="text-white bg-clip-text bg-gradient-to-r font-extrabold">
               Build Better
             </span>
           </h1>

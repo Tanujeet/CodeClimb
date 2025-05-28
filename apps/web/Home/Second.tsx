@@ -23,7 +23,7 @@ const Second = () => {
             Best way to learn programming <br />
             is by
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-cyan-400 to-cyan-500 font-extrabold">
+            <span className="text-white bg-clip-text bg-gradient-to-r  font-extrabold">
               Building Projects
             </span>
           </h3>
@@ -44,7 +44,7 @@ const Second = () => {
             </div>
 
             <div className="lg:w-6/12 px-6 text-center lg:text-left">
-              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-cyan-400 to-cyan-500 font-extrabold text-[1.5rem] lg:text-[2.5rem]">
+              <h3 className="text-white bg-clip-text bg-gradient-to-r  font-extrabold text-[1.5rem] lg:text-[2.5rem]">
                 Escape Tutorial Hell by Building Projects
               </h3>
               <p className="text-black max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
@@ -58,7 +58,7 @@ const Second = () => {
           {/* Second Section */}
           <div className="flex flex-col lg:flex-row gap-3 lg:gap-10 px-4 lg:px-24 items-center mt-20">
             <div className="lg:w-6/12 px-6 text-center lg:text-left">
-              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-cyan-400 to-cyan-500 font-extrabold text-[1.5rem] lg:text-[2.5rem]">
+              <h3 className="text-white bg-clip-text bg-gradient-to-r  font-extrabold text-[1.5rem] lg:text-[2.5rem]">
                 Learn New Skills Daily
               </h3>
               <p className="text-black max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
@@ -89,7 +89,7 @@ const Second = () => {
             </div>
 
             <div className="lg:w-6/12 px-6 text-center lg:text-left">
-              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-cyan-400 to-cyan-500 font-extrabold text-[1.5rem] lg:text-[2.5rem]">
+              <h3 className="text-white bg-clip-text bg-gradient-to-r  font-extrabold text-[1.5rem] lg:text-[2.5rem]">
                 Build Your Portfolios
               </h3>
               <p className="text-black max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
