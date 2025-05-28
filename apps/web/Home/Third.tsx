@@ -42,14 +42,14 @@ const Third = () => {
       projects: [
         {
           title: "RESTful API",
-          image: "/images/backend_api.png",
+          image: "/images/152fcb14-3acf-4027-a3c2-307f4596ef4b_3000x3900.png",
           level: "Intermediate",
           description:
             "Build and test a RESTful API using Node.js and Express with MongoDB integration.",
         },
         {
           title: "Auth System",
-          image: "/images/auth_project.png",
+          image: "/images/email-requested-at-login.png",
           level: "Intermediate",
           description:
             "Implement user authentication with sessions, JWT, and password encryption using bcrypt.",
