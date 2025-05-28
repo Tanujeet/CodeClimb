@@ -27,7 +27,7 @@ const Second = () => {
               Building Projects
             </span>
           </h3>
-          <p className="text-white mt-4 max-w-[600px] text-lg">
+          <p className="text-gray-600 mt-4 max-w-[600px] text-lg">
             Practice by doing. Projects help you apply what you’ve learned and
             build confidence.
           </p>
@@ -47,7 +47,7 @@ const Second = () => {
               <h3 className="text-black  bg-clip-text bg-gradient-to-r  font-extrabold text-[1.5rem] lg:text-[2.5rem]">
                 Escape Tutorial Hell by Building Projects
               </h3>
-              <p className="text-white max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
+              <p className="text-gray-600 max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
                 Tutorials are great, but they can trap you if you never build.
                 The best way to learn is by creating real projects that put your
                 skills to the test and help you grow faster.
@@ -61,7 +61,7 @@ const Second = () => {
               <h3 className="text-black bg-clip-text bg-gradient-to-r  font-extrabold text-[1.5rem] lg:text-[2.5rem]">
                 Learn New Skills Daily
               </h3>
-              <p className="text-white max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
+              <p className="text-gray-600 max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
                 Stay ahead by learning something new every day. Whether it’s a
                 small coding concept, a design principle, or a productivity
                 trick, daily skill-building keeps your mind sharp and your
@@ -92,7 +92,7 @@ const Second = () => {
               <h3 className="text-black bg-clip-text bg-gradient-to-r  font-extrabold text-[1.5rem] lg:text-[2.5rem]">
                 Build Your Portfolios
               </h3>
-              <p className="text-white max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
+              <p className="text-gray-600 max-w-[600px] text-md mx-auto lg:mx-0 mt-4 font-light">
                 Building projects not only sharpens your skills but also helps
                 you create a portfolio that showcases your abilities to
                 employers and clients. A strong portfolio is your best tool to
