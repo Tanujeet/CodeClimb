@@ -1,7 +1,5 @@
 const Fourth = () => {
-  return (
-    <div>Fourth</div>
-  );
+  return <section>Fourth</section>;
 };
 
 export default Fourth;

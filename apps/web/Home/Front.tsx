@@ -9,7 +9,7 @@ const Front = () => {
   const router = useRouter();
 
   return (
-    <div className="w-full bg-[#d4c9c9] text-black">
+    <section className="w-full bg-[#d4c9c9] text-black">
       <Navbar />
 
       <div className="relative flex flex-col gap-12 z-10 px-4 mt-24">
@@ -79,7 +79,7 @@ const Front = () => {
           </div>
         </section>
       </div>
-    </div>
+    </section>
   );
 };
 
