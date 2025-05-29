@@ -41,7 +41,7 @@ const Hero = () => {
             <img
               src="/images/undraw_coding_joxb.svg"
               alt="Coding Illustration"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105"
             />
           </div>
         </div>
