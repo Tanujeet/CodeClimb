@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "../Components/Footer";
 import Fourth from "../Home/Fourth";
 import Front from "../Home/Front";
 import Second from "../Home/Second";
@@ -12,6 +13,7 @@ const page = () => {
       <Second />
       <Third />
       <Fourth />
+      <Footer />
     </div>
   );
 };
