@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           <div className="flex items-center p-1 rounded-2xl border border-slate-400 gap-2">
             <a
-              href="https://github.com/your-profile"
+              href="https://github.com/Tanujeet/CodeClimb"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit CodeClimb GitHub"

@@ -5,42 +5,53 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import Button from "../Components/Button";
 
-const Front = () => {
+const Hero = () => {
   const router = useRouter();
 
   return (
     <section className="w-full bg-[#d4c9c9] text-black">
       <Navbar />
 
-      <div className="relative flex flex-col gap-12 z-10 px-4 mt-24">
-        {/* Hero Section */}
-        <div className="mt-39 flex flex-col items-center text-center">
-          <h1 className="font-semibold text-[2.2rem] md:text-[3rem] lg:text-[4rem] max-w-[800px] leading-tight">
-            Climb the Code Ladder <br />
-            <span className="text-white bg-clip-text bg-gradient-to-r font-extrabold">
-              Build Better
-            </span>
-          </h1>
-          <p className="text-black max-w-[600px] text-md lg:text-lg font-light mt-4">
-            Learn by building real-world projects. Step up from tutorials to
-            practical experience.
-          </p>
-        </div>
+      <div className="relative z-10 px-4 mt-60  max-w-7xl mx-auto">
+        {/* Hero Content: Text + Image */}
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+          {/* Text Section */}
+          <div className="flex-1 flex flex-col gap-4 lg:gap-6">
+            <h1 className="font-semibold text-[2.2rem] md:text-[3rem] lg:text-[4rem] max-w-[800px] leading-tight">
+              Climb the Code Ladder <br />
+              <span className="text-white bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold">
+                Build Better
+              </span>
+            </h1>
+            <p className="text-black max-w-[600px] text-md lg:text-lg font-light">
+              Learn by building real-world projects. Step up from tutorials to
+              practical experience.
+            </p>
 
-        {/* Button */}
-        <div className="flex justify-center">
-          <Button
-            title="Explore Projects"
-            onClick={() => router.push("/projects")}
-          />
+            <div className="mt-4">
+              <Button
+                title="Explore Projects"
+                onClick={() => router.push("/projects")}
+              />
+            </div>
+          </div>
+
+          {/* Image Section */}
+          <div className="flex-1 w-full max-w-md">
+            <img
+              src="/images/undraw_coding_joxb.svg"
+              alt="Coding Illustration"
+              className="w-full h-auto object-contain"
+            />
+          </div>
         </div>
 
         {/* Skills Section */}
-        <section className="w-full lg:w-[70%] max-w-screen-lg mx-auto flex flex-col gap-8 ">
-          <h2 className="text-[1.2rem] lg:text-[1.5rem] text-black text-center font-semibold mx-auto max-w-[400px]">
+        <section className="w-full mt-30 flex flex-col gap-8 items-center">
+          <h2 className="text-[1.2rem] lg:text-[1.5rem] text-black font-semibold text-center max-w-[400px]">
             Build Your Projects with Top Skills
           </h2>
-          <div className="flex flex-wrap justify-center gap-10 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-8 sm:gap-10 max-w-4xl">
             {[
               {
                 src: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
@@ -83,4 +94,4 @@ const Front = () => {
   );
 };
 
-export default Front;
+export default Hero;
