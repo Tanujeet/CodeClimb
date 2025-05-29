@@ -1,6 +1,6 @@
 const Second = () => {
   return (
-    <div className="min-h-screen w-full relative z-10 mt-6 px-4 bg-[#d4c9c9] text-black">
+    <div className="min-h-screen w-full relative z-10 px-4 mt-20 bg-[#d4c9c9]text-black">
       <div className="mt-10">
         <div className="w-fit mx-auto">
           <svg
@@ -18,7 +18,7 @@ const Second = () => {
             />
           </svg>
         </div>
-        <div className="relative z-10 mt-6 flex flex-col items-center text-center">
+        <div className="relative z-10 flex flex-col items-center text-center">
           <h3 className="font-semibold !text-[2rem] lg:!text-[3rem] max-w-[800px] mx-auto z-10">
             Best way to learn programming <br />
             is by

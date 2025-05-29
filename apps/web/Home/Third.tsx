@@ -80,7 +80,7 @@ const Third = () => {
   ];
 
   return (
-    <div className="mt-16 px-6 lg:px-20">
+    <div className="mt-50 px-6 lg:px-20">
       <h1 className="text-5xl font-semibold text-center mb-12">
         Career Roadmap
       </h1>

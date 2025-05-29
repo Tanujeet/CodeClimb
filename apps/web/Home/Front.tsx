@@ -9,12 +9,12 @@ const Front = () => {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen w-full bg-[#d4c9c9] text-black">
+    <div className="w-full bg-[#d4c9c9] text-black">
       <Navbar />
 
-      <div className="relative flex flex-col gap-12 z-10 px-4 mt-25">
+      <div className="relative flex flex-col gap-12 z-10 px-4 mt-24">
         {/* Hero Section */}
-        <div className="mt-32 flex flex-col items-center text-center">
+        <div className="mt-39 flex flex-col items-center text-center">
           <h1 className="font-semibold text-[2.2rem] md:text-[3rem] lg:text-[4rem] max-w-[800px] leading-tight">
             Climb the Code Ladder <br />
             <span className="text-white bg-clip-text bg-gradient-to-r font-extrabold">
@@ -36,7 +36,7 @@ const Front = () => {
         </div>
 
         {/* Skills Section */}
-        <section className="w-full lg:w-[70%] max-w-screen-lg mx-auto flex flex-col gap-8 my-24">
+        <section className="w-full lg:w-[70%] max-w-screen-lg mx-auto flex flex-col gap-8 ">
           <h2 className="text-[1.2rem] lg:text-[1.5rem] text-black text-center font-semibold mx-auto max-w-[400px]">
             Build Your Projects with Top Skills
           </h2>
