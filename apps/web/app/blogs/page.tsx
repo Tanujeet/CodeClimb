@@ -2,7 +2,9 @@ import Navbar from "../../Components/Navbar";
 
 const page = () => {
   return (
-    <div>|<Navbar/></div>
+    <div>
+      <Navbar />
+    </div>
   );
 };
 
