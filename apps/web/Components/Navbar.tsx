@@ -41,7 +41,9 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
-          <span className="text-xl font-bold">CodeClimb</span>
+          <Link href="/" className="text-xl font-bold">
+            CodeClimb
+          </Link>
         </div>
 
         {/* Navigation Links */}
