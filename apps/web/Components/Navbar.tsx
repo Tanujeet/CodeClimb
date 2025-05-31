@@ -48,11 +48,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className="hidden lg:flex gap-12 font-medium text-sm uppercase">
-          <div
-            className="relative"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
+          <div className="relative" onMouseEnter={() => setIsHovered(true)}>
             <button className="uppercase text-sm font-medium">
               Career Roadmap
             </button>
@@ -60,19 +56,19 @@ const Navbar = () => {
             {isHovered && (
               <div className="absolute top-full left-0 mt-2 bg-white text-black border border-gray-200 shadow-lg rounded w-48 z-50">
                 <Link
-                  href="/career/frontend"
+                  href="/Roadmap/frontend"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Frontend
                 </Link>
                 <Link
-                  href="/career/backend"
+                  href="/Roadmap/backend"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Backend
                 </Link>
                 <Link
-                  href="/career/fullstack"
+                  href="/Roadmap/fullstack"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Full Stack
