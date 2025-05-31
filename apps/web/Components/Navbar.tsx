@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showNavbar, setShowNavbar] = useState(true);
-
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +48,39 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className="hidden lg:flex gap-12 font-medium text-sm uppercase">
-          <Link href="/career">Career Roadmap</Link>
+          <div
+            className="relative"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <button className="uppercase text-sm font-medium">
+              Career Roadmap
+            </button>
+
+            {isHovered && (
+              <div className="absolute top-full left-0 mt-2 bg-white text-black border border-gray-200 shadow-lg rounded w-48 z-50">
+                <Link
+                  href="/career/frontend"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Frontend
+                </Link>
+                <Link
+                  href="/career/backend"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Backend
+                </Link>
+                <Link
+                  href="/career/fullstack"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Full Stack
+                </Link>
+              </div>
+            )}
+          </div>
+
           <Link href="/projects">Projects</Link>
           <Link href="/blogs">Blogs</Link>
         </div>

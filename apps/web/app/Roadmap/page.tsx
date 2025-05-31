@@ -3,10 +3,9 @@ import Third from "../../Home/Third";
 
 const page = () => {
   return (
-      <div>
-          <Navbar />
-          <Third/>
-      </div>
+    <div>
+      <Navbar />
+    </div>
   );
 };
 
