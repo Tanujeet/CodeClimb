@@ -3,9 +3,9 @@ import Navbar from "../../../Components/Navbar";
 
 const page = () => {
   return (
-    <section className="h-screen w-screen flex justify-center">
+    <div className="min-h-vh max-w-vw overflow-hidden">
       <Navbar />
-      <div className="relative mt-56 lg:mt-50 ">
+      <section className="relative mt-56 lg:mt-50 ">
         <div className="relative flex flex-col gap-6 z-10 justify-center items-center text-center0">
           <h1 className="uppercase text-5xl text-center font-bold">
             How To Become a <br />
@@ -18,8 +18,11 @@ const page = () => {
             <Button title="Get started now" />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section className="px-4 lg:px-[4rem] py-[4rem] mt-4 ">
+        <div>hy</div>
+      </section>
+    </div>
   );
 };
 
