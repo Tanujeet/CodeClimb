@@ -5,7 +5,6 @@ import Navbar from "../../../Components/Navbar";
 const page = () => {
   return (
     <div className="min-h-screen w-screen overflow-hidden">
-      <Navbar />
       <Heading
         title={
           <>

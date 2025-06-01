@@ -10,8 +10,6 @@ const Hero = () => {
 
   return (
     <section className="w-full bg-[#d4c9c9] text-black">
-      <Navbar />
-
       <div className="relative z-10 px-4 mt-60  max-w-7xl mx-auto">
         {/* Hero Content: Text + Image */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">

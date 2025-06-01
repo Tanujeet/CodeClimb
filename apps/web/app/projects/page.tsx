@@ -1,9 +1,7 @@
 import Navbar from "../../Components/Navbar";
 
 const page = () => {
-  return (
-    <div><Navbar/></div>
-  );
+  return <div></div>;
 };
 
 export default page;
