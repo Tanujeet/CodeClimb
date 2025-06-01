@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "../Components/Providers";
+import Navbar from "../Components/Navbar";
 
 export const metadata: Metadata = {
   title: "CodeClimb",
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className=" bg-[#d4c9c9] text-black font-[Knewave]">
-        <Providers>{children}</Providers>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
