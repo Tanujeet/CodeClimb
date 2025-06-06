@@ -59,7 +59,7 @@ const page = () => {
           Explore some of the front-end projects built with HTML, CSS,
           JavaScript, and React.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-3">
           {FrontEnd.projects.map((project, index) => (
             <div
               key={index}

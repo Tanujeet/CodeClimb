@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "../Components/Providers";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 export const metadata: Metadata = {
   title: "CodeClimb",
@@ -19,6 +20,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
