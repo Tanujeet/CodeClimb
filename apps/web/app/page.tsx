@@ -13,7 +13,6 @@ const page = () => {
       <Second />
       <Third />
       <Fourth />
-      <Footer />
     </div>
   );
 };
