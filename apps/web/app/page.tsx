@@ -1,6 +1,5 @@
 "use client";
 
-import Footer from "../Components/Footer";
 import Fourth from "../Home/Fourth";
 import Hero from "../Home/Hero";
 import Second from "../Home/Second";
