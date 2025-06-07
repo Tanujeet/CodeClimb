@@ -35,7 +35,7 @@ const page = () => {
               />
               <div className="flex flex-col gap-4 justify-start">
                 <div className="text-left text-lg lg:text-xl">
-                  “How to Use AI Tools like GitHub Copilot Efficiently <br />{" "}
+                  “How to Use AI Tools like GitHub Copilot Efficiently <br />
                   (Without Getting Lazy)”
                   <div className="flex gap-2">
                     <span className="text-xs bg-gray-800/50 px-2 py-1 rounded-lg">
