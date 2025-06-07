@@ -26,16 +26,22 @@ const page = () => {
               href=""
               className="flex flex-col md:flex-row max-w-[1020px] items-center gap-6 md:gap-12  px-4"
             >
-              <Image src="" alt="" />
+              <Image
+                src="/images/Co-pilot.png"
+                alt=""
+                width={400}
+                height={260}
+              />
               <div className="flex flex-col gap-4 justify-start">
                 <div className="text-left text-lg lg:text-xl">
-                  Top 10 Mistake new developers make and how to avoid them
+                  “How to Use AI Tools like GitHub Copilot Efficiently <br />{" "}
+                  (Without Getting Lazy)”
                   <div className="flex gap-2">
                     <span className="text-xs bg-gray-800/50 px-2 py-1 rounded-lg">
                       Beginner
                     </span>
                     <span className="text-xs bg-gray-800/50 px-2 py-1 rounded-lg">
-                      Career
+                      Tools
                     </span>
                   </div>
                 </div>
@@ -45,16 +51,22 @@ const page = () => {
               href=""
               className="flex flex-col md:flex-row max-w-[1020px] items-center gap-6 md:gap-12   px-4"
             >
-              <Image src="" alt="" />
+              <Image
+                src="/images/Comparsion.png"
+                alt=""
+                width={400}
+                height={360}
+              />
               <div className="flex flex-col gap-4 justify-start">
                 <div className="text-left text-lg lg:text-xl">
-                  Top javascript Frameworks to Master in 2025 for developers
+                  “Next.js vs. SvelteKit: Which One Should You
+                  <br /> Master in 2025?”
                   <div className="flex gap-2">
                     <span className="text-xs bg-gray-800/50 px-2 py-1 rounded-lg">
-                      Beginner
+                      NextJs
                     </span>
                     <span className="text-xs bg-gray-800/50 px-2 py-1 rounded-lg">
-                      Career
+                      framework
                     </span>
                   </div>
                 </div>
