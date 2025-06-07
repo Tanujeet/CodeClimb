@@ -23,7 +23,7 @@ const page = () => {
         <div className="text-black px-4 pt-[3rem] bg-center bg-no-repeat mx-auto max-w-[1280px] 3xl:max-w-[1620px]">
           <div className="relative flex flex-col gap-16 z-10 justify-center items-center text-center lg:mt-4 mb-12">
             <a
-              href=""
+              href="/blogs/1"
               className="flex flex-col md:flex-row max-w-[1020px] items-center gap-6 md:gap-12  px-4"
             >
               <Image
@@ -49,7 +49,7 @@ const page = () => {
               </div>
             </a>
             <a
-              href=""
+              href="/blogs/2"
               className="flex flex-col md:flex-row max-w-[1020px] items-center gap-6 md:gap-12   px-4"
             >
               <Image
