@@ -30,7 +30,8 @@ const page = () => {
                 src="/images/Co-pilot.png"
                 alt=""
                 width={400}
-                height={260}
+                height={360}
+                className="pl-7"
               />
               <div className="flex flex-col gap-4 justify-start">
                 <div className="text-left text-lg lg:text-xl">
