@@ -82,7 +82,6 @@ const page = () => {
         <div className="flex justify-center gap-8 max-w-[1280px] 3xl:max-w-[1620px] mx-auto relative mt-16">
           <div className="py-3 xl:py-6 px-4 xl:px-12 md:px-8 2xl:px-12   bg-slate-50 backdrop-blur-sm rounded-xl">
             <article className="prose prose-pre:p-0 prose-pre:mt-2 prose-pre:bg-transparent prose-img:rounded-md prose-img:mt-4">
-              {" "}
               <main className="px-6 py-12 max-w-4xl mx-auto space-y-12 text-gray-900">
                 <header className="space-y-4">
                   <h1 className="text-4xl font-bold">
