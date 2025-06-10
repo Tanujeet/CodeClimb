@@ -6,11 +6,17 @@ const page = () => {
           <div className="relative mt-12 lg:mt-16 ">
             <div className="relative flex flex-col gap-6 z-10 justify-center items-center text-center">
               <h1 className="font-semibold text-center text-[2.2rem] md:text-[2.4rem] lg:text-[3rem] max-w-[800px] mt-4 z-10">
-                HTML & CSS <br /> projects
+                Frontend
+                <br /> projects
               </h1>
               <p className="text-gray-400 max-w-[600px] text-md lg:text-lg block font-light"></p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="mt-12">
+        <div className="w-full pb-[32px]">
+          <div className="slick-slider slick-initialized"></div>
         </div>
       </section>
     </main>
