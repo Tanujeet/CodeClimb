@@ -4,7 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css/autoplay";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const projects = [
   {
@@ -48,10 +49,15 @@ const Page = () => {
       <section className="mt-12">
         <div className="w-full pb-[32px] px-4 max-w-[1280px] mx-auto">
           <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
             navigation
             pagination={{ clickable: true }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
