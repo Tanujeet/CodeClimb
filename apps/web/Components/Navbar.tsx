@@ -12,7 +12,8 @@ const Navbar = () => {
 
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showNavbar, setShowNavbar] = useState(true);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isRoadmapHovered, setIsRoadmapHovered] = useState(false);
+  const [isProjectsHovered, setIsProjectsHovered] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,14 +51,14 @@ const Navbar = () => {
         <div className="hidden lg:flex gap-12 font-medium text-sm uppercase">
           <div
             className="relative"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={() => setIsRoadmapHovered(true)}
+            onMouseLeave={() => setIsRoadmapHovered(false)}
           >
             <button className="uppercase text-sm font-medium">
               Career Roadmap
             </button>
 
-            {isHovered && (
+            {isRoadmapHovered && (
               <div className="absolute top-full left-0 mt-0 bg-white text-black border border-gray-200 shadow-lg rounded w-48 z-50">
                 <Link
                   href="/Roadmap/frontend"
@@ -80,8 +81,37 @@ const Navbar = () => {
               </div>
             )}
           </div>
+          <div
+            className="relative"
+            onMouseEnter={() => setIsProjectsHovered(true)}
+            onMouseLeave={() => setIsProjectsHovered(false)}
+          >
+            <button className="uppercase text-sm font-medium">Projects</button>
 
-          <Link href="/projects">Projects</Link>
+            {isProjectsHovered && (
+              <div className="absolute top-full left-0 mt-0 bg-white text-black border border-gray-200 shadow-lg rounded w-48 z-50">
+                <Link
+                  href="/projects/Frontend-projects"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Frontend Projects
+                </Link>
+                <Link
+                  href="/projects/Backend-projects"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Backend Projects
+                </Link>
+                <Link
+                  href="/projects/fullstack-projects"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Full Stack Projects
+                </Link>
+              </div>
+            )}
+          </div>
+
           <Link href="/blogs">Blogs</Link>
         </div>
 
