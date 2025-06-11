@@ -68,7 +68,7 @@ const Page = () => {
             {projects.map((project, idx) => (
               <SwiperSlide key={idx}>
                 <div className="bg-white rounded-xl shadow-lg p-4 h-[320px] flex flex-col justify-between">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
                     className="w-full h-[150px] object-cover rounded-lg mb-4"
@@ -107,8 +107,14 @@ const Page = () => {
                   </div>
                   <div className="mt-3 p-2 md:w-6/12">
                     <div className="flex items-center justify-between">
-                      <div className="font-medium text-gray-400 text-xs whitespace-nowrap"></div>
+                      <div className="font-medium text-gray-400 text-xs whitespace-nowrap">
+                        Beginner
+                      </div>
                     </div>
+                    <div className="font-medium text-xl text-gray-300 mt-3">
+                      Todo app
+                    </div>
+                    <div className="text-gray-400 mt-4 font-normal"></div>
                   </div>
                 </a>
               </div>
