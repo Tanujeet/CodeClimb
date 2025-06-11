@@ -67,10 +67,12 @@ const Page = () => {
           >
             {projects.map((project, idx) => (
               <SwiperSlide key={idx}>
-                <div className="bg-white rounded-xl shadow-lg p-4 h-[320px] flex flex-col justify-between">
+                <div className="bg-white rounded-xl shadow-lg p-4 h-[320px] flex flex-col justify-between hover:shadow-xl transition-shadow duration-300">
                   <Image
                     src={project.image}
                     alt={project.title}
+                    width={500}
+                    height={300}
                     className="w-full h-[150px] object-cover rounded-lg mb-4"
                   />
                   <h3 className="text-lg font-semibold">{project.title}</h3>
