@@ -80,6 +80,17 @@ const Page = () => {
           </Swiper>
         </div>
       </section>
+      <section className="mt-12 mx-auto max-w-[1280px] 3xl:max-w-[1620px] px-2 lg:px-10">
+        <div className="flex flex-col items-center gap-2 text-center justify-center my-6">
+          <h3 className="font-semibold text-center !text-[2.2rem] md:text-[2.4rem] lg:text-[3rem] max-w-[800px] z-10">
+            10 Projects to master <br /> Frontend
+          </h3>
+          <p className="text-white text-center max-w-[600px] mx-auto mt-4 text-base md:text-lg font-light">
+            Build these projects step-by-step to strengthen your skills in HTML,
+            CSS, JavaScript, and modern frameworks like React and Tailwind.
+          </p>
+        </div>
+      </section>
     </main>
   );
 };
