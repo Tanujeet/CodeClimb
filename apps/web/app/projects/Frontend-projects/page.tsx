@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import Image from "next/image";
 
 const projects = [
   {
@@ -89,6 +90,30 @@ const Page = () => {
             Build these projects step-by-step to strengthen your skills in HTML,
             CSS, JavaScript, and modern frameworks like React and Tailwind.
           </p>
+        </div>
+        <div className="w-full pb-[32px] flex flex-col gap-12 lg:gap-32 mt-16">
+          <div className="">
+            <div className="relative h-full">
+              <div className="rounded-xl p-2 block pb-4 transition ease-in-out duration-200  outline-2 outline-offset-2 outline-blue-500 relative overflow-hidden group">
+                <a href="">
+                  <div className="md:w-6/12">
+                    <Image
+                      src=""
+                      width={10}
+                      height={10}
+                      alt=""
+                      className="w-full object-cover overflow-hidden rounded-lg aspect-[16/9]"
+                    ></Image>
+                  </div>
+                  <div className="mt-3 p-2 md:w-6/12">
+                    <div className="flex items-center justify-between">
+                      <div className="font-medium text-gray-400 text-xs whitespace-nowrap"></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
