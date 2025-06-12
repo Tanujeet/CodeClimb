@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "A modern portfolio built with Next.js and Tailwind.",
-    image: "/projects/portfolio.png",
+    image: "",
   },
   {
     title: "Todo App",
@@ -30,7 +30,7 @@ const projects = [
 const Page = () => {
   return (
     <main>
-      <section className="bg-[url('/homepage/blue-planet.webp')] bg-right bg-no-repeat bg-cover bg-opacity-50 pt-[20px] px-0 md:px-12">
+      <section className="pt-[20px] px-0 md:px-12">
         <div className="text-black pt-[6rem] px-4 lg:pt-[3rem] bg-center bg-no-repeat mx-auto max-w-[1280px] 3xl:max-w-[1620px]">
           <div className="relative mt-12 lg:mt-16 ">
             <div className="relative flex flex-col gap-6 z-10 justify-center items-center text-center">
