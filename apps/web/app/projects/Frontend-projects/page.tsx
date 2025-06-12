@@ -95,31 +95,34 @@ const Page = () => {
         </div>
         <ProjectCard
           level="Beginner"
-          title="Todo App"
-          description="How to build  a TodoApp"
+          title="Todo List Application"
+          description="Learn how to build a fully functional and responsive Todo List app to manage daily tasks using JavaScript and DOM manipulation."
           image="/images/scr_todolist1.png"
           href="/list/todoapp"
           reverse={true}
         />
+
         <ProjectCard
           level="Beginner"
-          title="Weather app"
-          description="How to build  a weather App"
+          title="Weather Forecast App"
+          description="Create a dynamic weather app that fetches real-time data from an API and displays weather conditions based on user input."
           image="/images/simple-weather-app_23-2147552413.avif"
           href="/list/todoapp"
         />
+
         <ProjectCard
           level="Beginner"
-          title="Random Quote generator app"
-          description="How to build  a Random Quaote generator App"
+          title="Random Quote Generator"
+          description="Develop a sleek app that displays inspirational quotes randomly using JavaScript logic and clean UI styling."
           image="/images/maxresdefault.jpg"
           href="/list/Quotegenretor"
           reverse={true}
         />
+
         <ProjectCard
           level="Beginner"
-          title="Calculator"
-          description="How to build  a Random calculator App"
+          title="Simple Calculator"
+          description="Build a basic calculator with arithmetic operations using JavaScript and styled with modern responsive design."
           image="/images/21ccec97787515.5ecd66fe7be58.png"
           href="/list/Calculator"
         />
