@@ -24,7 +24,7 @@ const projects = [
     description: "Fetch weather data using OpenWeatherMap API.",
     image: "/images/simple-weather-app_23-2147552413.avif",
   },
-  // Add more projects as needed
+
 ];
 
 const Page = () => {
@@ -94,32 +94,36 @@ const Page = () => {
           </p>
         </div>
         <div className="w-full pb-[32px] flex flex-col gap-12 lg:gap-32 mt-16">
-          <div className="">
-            <div className="relative h-full">
-              <div className="rounded-xl p-2 block pb-4 transition ease-in-out duration-200  outline-2 outline-offset-2 outline-blue-500 relative overflow-hidden group">
-                <a href="">
+          <div className="relative h-full">
+            <div className="rounded-xl p-2 pb-4 transition ease-in-out duration-200 outline-2 outline-offset-2 outline-blue-500 relative overflow-hidden group">
+              <a href="">
+                {/* Make content side-by-side */}
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                  {/* Left Side - Text */}
+                  <div className="md:w-6/12 mt-3 p-4">
+                    <div className="flex items-center justify-between">
+                      <span className="font-semibold text-xs ">Beginner</span>
+                    </div>
+                    <h3 className="font-semibold text-xl text-black mt-4">
+                      Todo App
+                    </h3>
+                    <p className="text-black mt-2 text-sm">
+                      Build a simple and functional todo list application to
+                      practice JavaScript and UI logic.
+                    </p>
+                  </div>
+
                   <div className="md:w-6/12">
                     <Image
-                      src=""
-                      width={10}
-                      height={10}
-                      alt=""
+                      src="/images/scr_todolist1.png"
+                      width={800}
+                      height={450}
+                      alt="Todo App Preview"
                       className="w-full object-cover overflow-hidden rounded-lg aspect-[16/9]"
-                    ></Image>
+                    />
                   </div>
-                  <div className="mt-3 p-2 md:w-6/12">
-                    <div className="flex items-center justify-between">
-                      <div className="font-medium text-gray-400 text-xs whitespace-nowrap">
-                        Beginner
-                      </div>
-                    </div>
-                    <div className="font-medium text-xl text-gray-300 mt-3">
-                      Todo app
-                    </div>
-                    <div className="text-gray-400 mt-4 font-normal"></div>
-                  </div>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
