@@ -103,9 +103,9 @@ const Page = () => {
         />
         <ProjectCard
           level="Beginner"
-          title="Todo App"
-          description="How to build  a TodoApp"
-          image="/images/scr_todolist1.png"
+          title="Weather app"
+          description="How to build  a weather App"
+          image="/images/simple-weather-app_23-2147552413.avif"
           href="/list/todoapp"
         />
       </section>
