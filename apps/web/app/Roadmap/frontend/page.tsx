@@ -1,9 +1,9 @@
+import Image from "next/image";
 import Button from "../../../Components/Button";
 import Heading from "../../../Components/Heading";
 import Navbar from "../../../Components/Navbar";
 
 const page = () => {
-
   const FrontEnd = {
     title: "Front End Development",
     description:
@@ -65,7 +65,9 @@ const page = () => {
               key={index}
               className="rounded-xl border border-gray-300 bg-black shadow-md hover:shadow-lg transition duration-300 overflow-hidden"
             >
-              <img
+              <Image
+                width={300}
+                height={300}
                 src={project.image}
                 alt={`Screenshot of ${project.title}`}
                 className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"

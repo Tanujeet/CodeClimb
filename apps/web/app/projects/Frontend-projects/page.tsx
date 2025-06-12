@@ -108,6 +108,21 @@ const Page = () => {
           image="/images/simple-weather-app_23-2147552413.avif"
           href="/list/todoapp"
         />
+        <ProjectCard
+          level="Beginner"
+          title="Random Quote generator app"
+          description="How to build  a Random Quaote generator App"
+          image="/images/maxresdefault.jpg"
+          href="/list/Quotegenretor"
+          reverse={true}
+        />
+        <ProjectCard
+          level="Beginner"
+          title="Calculator"
+          description="How to build  a Random calculator App"
+          image="/images/21ccec97787515.5ecd66fe7be58.png"
+          href="/list/Calculator"
+        />
       </section>
     </main>
   );
