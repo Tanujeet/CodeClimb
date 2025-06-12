@@ -104,23 +104,6 @@ const Page = () => {
           image="/images/email-requested-at-login.png"
           href="/list/WeatherApp"
         />
-
-        <ProjectCard
-          level="Beginner"
-          title="Random Quote Generator"
-          description="Develop a sleek app that displays inspirational quotes randomly using JavaScript logic and clean UI styling."
-          image="/images/maxresdefault.jpg"
-          href="/List/Quotegenretor"
-          reverse={true}
-        />
-
-        <ProjectCard
-          level="Beginner"
-          title="Simple Calculator"
-          description="Build a basic calculator with arithmetic operations using JavaScript and styled with modern responsive design."
-          image="/images/21ccec97787515.5ecd66fe7be58.png"
-          href="/List/Calculator"
-        />
       </section>
     </main>
   );
