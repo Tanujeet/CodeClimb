@@ -98,7 +98,7 @@ const Page = () => {
           title="Todo List Application"
           description="Learn how to build a fully functional and responsive Todo List app to manage daily tasks using JavaScript and DOM manipulation."
           image="/images/scr_todolist1.png"
-          href="/list/todoapp"
+          href="/List/todoapp"
           reverse={true}
         />
 
@@ -107,7 +107,7 @@ const Page = () => {
           title="Weather Forecast App"
           description="Create a dynamic weather app that fetches real-time data from an API and displays weather conditions based on user input."
           image="/images/simple-weather-app_23-2147552413.avif"
-          href="/list/todoapp"
+          href="/list/WeatherApp"
         />
 
         <ProjectCard
@@ -115,7 +115,7 @@ const Page = () => {
           title="Random Quote Generator"
           description="Develop a sleek app that displays inspirational quotes randomly using JavaScript logic and clean UI styling."
           image="/images/maxresdefault.jpg"
-          href="/list/Quotegenretor"
+          href="/List/Quotegenretor"
           reverse={true}
         />
 
@@ -124,7 +124,7 @@ const Page = () => {
           title="Simple Calculator"
           description="Build a basic calculator with arithmetic operations using JavaScript and styled with modern responsive design."
           image="/images/21ccec97787515.5ecd66fe7be58.png"
-          href="/list/Calculator"
+          href="/List/Calculator"
         />
       </section>
     </main>
